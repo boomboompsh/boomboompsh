@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body onload="loadXMLDoc()">
+<div id="demo">
+</div>
+<script>
+function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+      document.getElementById("input_4_0").value = "Virgil Texas"
+      document.getElementById("input_4_1").value = "Virgil Texas"
+      document.getElementById("input_4_2").value = "Virgil Texas"
+      document.getElementById("label_input_4_0").innerHTML = "Virgil Texas"
+      document.getElementById("label_input_4_1").innerHTML = "Virgil Texas"
+      document.getElementById("label_input_4_2").innerHTML = "Virgil Texas"
+    }
+  };
+  xhttp.open("GET", "https://form.jotform.com/90784506014152", true);
+  xhttp.send();
+}
+</script>
+</body>
+</html>
