@@ -10,6 +10,12 @@ function loadXMLDoc() {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("demo").innerHTML =
       this.responseText;
+      document.getElementById("input_3_0").value = "Virgil Texas"
+      document.getElementById("input_3_1").value = "Virgil Texas"
+      document.getElementById("input_3_2").value = "Virgil Texas"
+      document.getElementById("label_input_3_0").innerHTML = "Virgil Texas"
+      document.getElementById("label_input_3_1").innerHTML = "Virgil Texas"
+      document.getElementById("label_input_3_2").innerHTML = "Virgil Texas"
     }
   };
   xhttp.open("GET", "https://form.jotform.com/nycstrongest/grey-trash-can", true);
